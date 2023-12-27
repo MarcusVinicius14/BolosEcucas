@@ -2,8 +2,15 @@ import { getData } from '../infra/database'
 
 export default async function Home() {
   const products = await getData()
-  console.log(products)
   return (
-    <div>Ola</div>
+    <div>
+      <div>
+        <h1>Ofertas</h1>
+      </div>
+      <div>
+        <h1>Destaques</h1>
+      </div>
+
+    </div>
   )
 }
